@@ -31,12 +31,13 @@ const uploadTemperature = async (req, res) => {
     })
 
   } catch (error) {
-      console.error(error); // prints full error with stack trace to the server console
-      res.status(500).json({ // optional: set proper HTTP status
-          success: false,
-          message: error.message, // just the message
-          stack: error.stack      // optional: full stack trace
-      });
+    console.log(error)
+    console.error(error); // prints full error with stack trace to the server console
+    res.status(500).json({ // optional: set proper HTTP status
+        success: false,
+        message: error.message, // just the message
+        stack: error.stack      // optional: full stack trace
+    });
   }
 }
 

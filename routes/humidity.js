@@ -31,6 +31,7 @@ const uploadHumidity = async (req, res) => {
     })
 
   } catch (error) {
+      console.log(error)
       console.error(error); // prints full error with stack trace to the server console
       res.status(500).json({ // optional: set proper HTTP status
           success: false,
