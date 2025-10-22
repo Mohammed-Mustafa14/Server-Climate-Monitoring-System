@@ -18,6 +18,6 @@ app.get('/')
 
 // define the routes
 app.use('/humidity', cors(corsOptions), humidityRouter);
-app.use('temperature', cors(corsOptions), temperatureRouter)
+app.use('/temperature', cors(corsOptions), temperatureRouter)
 
 app.listen(port, () => {console.log("server listening on port 5000")})
