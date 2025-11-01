@@ -26,7 +26,7 @@ const uploadHumidity = async (req, res) => {
       tableId: appwriteConfig.humidityTableId,
       rowId: ID.unique(),
       data: { 
-        humidity: parseFloat(humidity),        
+        data: parseFloat(humidity),        
        }
     })
 

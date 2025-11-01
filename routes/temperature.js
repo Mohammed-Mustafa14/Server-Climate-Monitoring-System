@@ -26,7 +26,7 @@ const uploadTemperature = async (req, res) => {
       tableId: appwriteConfig.temperatureTableId,
       rowId: ID.unique(),
       data: { 
-        temperature: parseFloat(temperature),        
+        data: parseFloat(temperature),        
        }
     })
 
